@@ -1,0 +1,180 @@
+---
+layout: default
+---
+
+<section class="main">
+
+    <div class="row">
+      <div class="small-12 small-centered column">
+
+
+        <div class="logo">
+          <div class="flipper">
+            {% include logo-svg.html %}
+
+            <div class="photo"></div>
+          </div>
+
+        </div>
+        <h2 class="text-center tagline"><span>Husband</span><span>Front-End Developer</span><span>Project Manager</span></h2>
+<!-- 
+Lucky Husband 
+Software Consultant
+Hapless Handyman
+Passionate Web Technologist
+Lively Jokester
+Aspiring Homebrewer
+Impatient Pitmaster
+Efficiency Seeker
+Beagle Lover
+Proud southpaw
+Movie Buff
+ -->
+      </div>
+    </div>
+
+</section>
+
+<section id="about">
+  <div class="row">
+    <div class="small-12 medium-10 medium-centered column">
+
+      <h2>About</h2> 
+      <hr>
+      <div class="row">
+        <div class="small-12 column">
+          <p>
+            I live in Omaha with my amazing wife Jaci, and our two beagles, 
+            <a href="http://packdog.com/felix-3">Felix</a> and 
+            <a href="http://packdog.com/oscar-43">Oscar</a>. I find great pleasure in making things from scratch, whether it's for home improvement, cooking, or mixng up a home brew. 
+            I'm also insanley competitive and a little mischevious - consider yourself warned.
+          </p>
+
+          <h3>Professionally</h3>
+          <p>
+            Lead Web Developer @ Volano Solutions. I've spent my entire career 
+            focusing on web application development, the business behind it, my clients, and providing great customer service, an front-end development and design. 
+            This has all come to a wonderful crescendo at Volano. 
+          </p>
+
+        </div>
+
+        <!-- <div class="small-4 column">
+          <img src="http://placehold.it/275x275" alt="">
+        </div> -->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="row">
+    <div class="small-12 medium-10 medium-centered columns">
+      <h2>Experience</h2>
+      <hr>
+
+
+      <div class="row">
+        
+        <div class="small-6 columns">
+          <h3>≈9:00 <em>to</em> ≈5:00</h3>
+          <a href="http://volanosolutions.com">
+            <img src="/images/volano_tagline.png" alt="Volano Solutions">
+          </a>
+
+        </div>
+
+        <div class="small-6 columns">
+          <h3>Extracurricular</h3>
+
+          <ul class="small-block-grid-2 medium-block-grid-3 font-grid">
+            <li>
+              <a href="https://github.com/johnstuif"><i class="fa fa-github"></i></a>
+            </li>
+            <li>
+              <a href="http://codepen.io/johnstuif/"><i class="fa fa-codepen"></i></a>
+            </li>
+            <li>
+              <a href="http://jsfiddle.net/user/johnstuif/fiddles/"><i class="fa fa-jsfiddle"></i></a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="thoughts">
+  <div class="row">
+    <div class="small-12 medium-10 medium-centered columns">
+
+      <h2>Thoughts</h2>
+      
+      <hr>
+      <div class="row">
+        <div class="small-12 medium-7 columns">
+          <div class="posts">
+            <h3>Organized</h3>
+            <p>
+              There's no one theme to what's shared below: thoughts about work, life, answers to technology 
+              <abbr title="Frequently Asked Questions">FAQs</abbr>. Puruse at your leisure.
+            </p>
+            {% for post in site.posts %}
+              <div class="row">
+                <div class="small-12 columns">
+                  <span class="post-date right">{{ post.date | date: "%b %-d, %Y" }}</span>
+                  <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3> 
+                  {% for tag in post.tags %}
+                    <span class="secondary label radius">{{ tag }}</span> 
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %} 
+
+            <hr>
+            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+          </div>
+        </div>
+
+        <div class="small-12 medium-5 columns">
+          <h3>Chaotic</h3>
+
+          <a class="twitter-timeline" href="https://twitter.com/johnstuif" data-widget-id="502061146061295616">Tweets by @johnstuif</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="connect">
+  <div class="row">
+    <div class="small-12 medium-10 medium-centered columns">
+      <h2>Connect</h2>
+      <hr>
+      <div class="row">
+        <div class="small-12 columns">
+          <p class="text-center link-list">
+            <a href="mailto:hello@johnnyomaha.com">
+              <i class="fa fa-envelope fa-2x"></i>            
+            </a>
+            <a href="http://twitter.com/johnstuif">
+              <i class="fa fa-twitter fa-2x"></i> 
+            </a>
+            <a href="http://linkedin.com/johnstuif">
+              <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+            <a href="http://facebook.com/johnstuif">
+              <i class="fa fa-facebook fa-2x"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

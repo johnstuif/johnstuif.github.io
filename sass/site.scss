@@ -1,0 +1,191 @@
+
+@import "foundation/settings";
+@import "foundation";
+@import "foundation-enhancements";
+
+$darkgreen: #033;
+$body-font-family-bold: "quicksandbold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$section-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.1);
+
+hr{
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+h2+hr{
+  margin-bottom: 2.75rem;
+}
+
+strong, .topbar{
+  font-family: $body-font-family-bold;
+}
+
+// SECTIONS
+body > section{
+  padding:2rem 0;
+
+  &:nth-of-type(odd){
+    background:#f6f6f6;
+    box-shadow: $section-shadow;
+  }
+
+  &.main{
+    background: url(/images/trianglify-orange-blue.svg) fixed;
+    background-position: center;
+    background-size:cover;
+    height: 400px;
+    color: white;
+    padding:0;
+    box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8);
+  }
+
+  > .row > .column, > .row > .columns{
+    h2:first-child{
+      font-family: 'monarchyregular';
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      color: $darkgreen;
+    }
+  }
+}
+
+.logo{
+  margin:50px auto 25px auto;
+  width:20%;
+  height: 194px;
+  perspective: 1000;
+
+  &:hover, &.hover{
+    .flipper {
+      transform: rotateX(180deg);
+    }
+  }
+
+  .flipper{
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width:100%;
+    height: 100%;
+
+    .monogram, .photo{
+      width:100%;
+      height: 100%;
+      backface-visibility: hidden;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .monogram{
+      display: block;
+    }
+
+    .photo{
+      transform: rotateX(180deg);
+      background:url(/images/social-profile.jpg) center center;
+      background-size: cover;
+      border-radius: 1000px;
+      border: #333 6px solid;
+    }
+  }
+}
+
+.tagline{
+  font-size:2rem;
+  color:#033;
+  font-family: 'monarchyregular';
+  text-shadow: 2px 2px 1px #fff;
+}
+
+.mono-background{display:none;}
+
+.site-title{
+  .monogram{
+    display: inline-block;
+    width:35px;
+    height: 35px;
+    float: left;
+    margin: 5px 10px 0 0;
+
+    path{
+      fill:white;
+    }
+  }
+}
+
+.main{
+  .monogram{
+    path{
+      fill:#033;
+    }
+    .mono-background{
+      display:initial;
+      fill:rgba(255,255,255,.25)
+    }
+  }
+}
+
+
+.font-grid li{
+  font-size:90px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #666;
+
+  a{
+    color:black;
+  }
+}
+
+.link-list{
+  a{
+    display: inline-block;
+    margin: 0 1rem;
+    color: $darkgreen;
+
+    &:hover{
+      color: $darkgreen;
+    }
+    &:visited{
+      color: $darkgreen;
+    }
+    &:active{
+      color: $darkgreen;
+    }
+  }
+}
+
+
+// BLOG //
+
+.posts{
+
+  .row{
+    margin-bottom: .75rem;
+  }
+
+  h3{
+    margin-bottom: 0;
+  }
+
+}
+
+footer{
+  background: #333;
+  box-shadow: $section-shadow;
+  padding: 1.5rem;
+  color: #eee;
+
+  a:link, a:visited{
+    color: #ddd;
+  }
+
+  a:hover, a:active{
+    color:#fff;
+  }
+}

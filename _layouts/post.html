@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<section>
+  <div class="row">
+    
+    <div class="small-12 small-centered column">
+      <h2 class="text-center">{{ page.title }}</h2>
+      <p class="text-center">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    </div>
+  </div>
+</section>
+
+<section class="post">
+  <div class="row">  
+    <div class="small-12 small-centered column">
+
+      <article class="post-content">
+      {{ content }}
+      </article>
+
+      <div id="page-navigation"> 
+        <div class="left"> 
+        {% if page.previous.url %} 
+          <a href="{{page.previous.url}}" title="Previous Post: 
+{{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+        {% endif %} 
+        </div> 
+
+        <div class="right"> 
+        {% if page.next.url %} 
+          <a href="{{page.next.url}}" title="next Post: 
+{{page.next.title}}">{{page.next.title}} &raquo; </a> 
+        {% endif %} 
+        </div> 
+      </div> 
+
+    </div>
+  </div>
+</section>

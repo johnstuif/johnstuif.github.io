@@ -1,0 +1,19 @@
+<h3>Category List</h3>
+<ul>
+  {% for category in site.categories %}
+    <li>
+      {{ category | first }}
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Tag Cloud</h3>
+<ol>
+{% for tag in site.tags %}
+  <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size }}%">
+      <a href="/{{ tag | first | slugize }}/">
+          {{ tag | first }}
+      </a>
+  </li>
+{% endfor %}
+</ol>
