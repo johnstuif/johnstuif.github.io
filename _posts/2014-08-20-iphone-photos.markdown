@@ -38,4 +38,4 @@ The first reaction is to use [iCloud](https://iCloud.com). While that's certainl
 
 ##Flickr
 
-
+Flickr, if you don't know, is a cloud service for photo and
