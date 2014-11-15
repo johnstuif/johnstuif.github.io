@@ -5701,7 +5701,7 @@ body > section {
     height: 400px;
     color: white;
     padding: 0;
-    box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8); }
+    box-shadow: inset 0 0px 120px 10px rgba(0, 0, 0, 0.5); }
   body > section > .row > .column h2:first-child, body > section > .row > .columns h2:first-child {
     font-family: 'monarchyregular';
     font-size: 4rem;

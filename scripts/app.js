@@ -5,11 +5,6 @@ setInterval(function () {
 
 
 $(function(){
-  
-  // $('.scrollTo').on('click', function(e) {
-  //     e.preventDefault();
-  //     Foundation.lib_methods.scrollTo($(window), $($(e.currentTarget).attr('href')).offset().top, 200);
-  // });
 
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
