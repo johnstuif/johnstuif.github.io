@@ -3,6 +3,28 @@ setInterval(function () {
     }, 4000 
 );
 
+var taglines = [
+"Lucky Husband", 
+"Software Consultant",
+"Hapless Handyman",
+"Passionate Web Technologist",
+"Lively Jokester",
+"Aspiring Homebrewer",
+"Impatient Pitmaster",
+"Efficiency Seeker",
+"Beagle Lover",
+"Proud Southpaw",
+"Movie Buff"
+]
+
+console.log(taglines.length)
+
+for (i = 0; i < 3; i++) {
+    var randomTagline = taglines[Math.floor(Math.random()*taglines.length)]
+    $('.tagline').append("<span>" + randomTagline + "</span>")
+    taglines.splice(taglines.indexOf(randomTagline),1)
+}
+
 
 $(function(){
 

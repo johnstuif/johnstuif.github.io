@@ -101,6 +101,10 @@ body > section{
   color:#033;
   font-family: 'monarchyregular';
   text-shadow: 2px 2px 1px #fff;
+
+  span{
+    padding:0 1rem;
+  }
 }
 
 .mono-background{display:none;}

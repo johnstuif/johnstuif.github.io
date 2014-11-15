@@ -4208,16 +4208,16 @@ h1 {
   font-size: 2.125rem; }
 
 h2 {
-  font-size: 1.6875rem; }
+  font-size: 1.0625rem; }
 
 h3 {
-  font-size: 1.375rem; }
+  font-size: 1.125rem; }
 
 h4 {
-  font-size: 1.125rem; }
+  font-size: 0.8125rem; }
 
 h5 {
-  font-size: 1.125rem; }
+  font-size: 0.875rem; }
 
 h6 {
   font-size: 1rem; }
@@ -4377,16 +4377,16 @@ blockquote p {
     font-size: 2.75rem; }
 
   h2 {
-    font-size: 2.3125rem; }
-
-  h3 {
     font-size: 1.6875rem; }
 
-  h4 {
+  h3 {
     font-size: 1.4375rem; }
 
-  h5 {
+  h4 {
     font-size: 1.125rem; }
+
+  h5 {
+    font-size: 0.875rem; }
 
   h6 {
     font-size: 1rem; } }
@@ -5120,7 +5120,7 @@ meta.foundation-mq-topbar {
     line-height: 2.8125rem;
     margin: 0; }
   .tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4 {
-    font-size: 1.125rem; }
+    font-size: 0.875rem; }
 
 .left-small {
   width: 2.8125rem;
@@ -5743,6 +5743,8 @@ body > section {
   color: #033;
   font-family: 'monarchyregular';
   text-shadow: 2px 2px 1px #fff; }
+  .tagline span {
+    padding: 0 1rem; }
 
 .mono-background {
   display: none; }
