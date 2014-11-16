@@ -38,4 +38,14 @@ The first reaction is to use [iCloud](https://iCloud.com). While that's certainl
 
 ##Flickr
 
-Flickr, if you don't know, is a cloud service for photo and
+Flickr, if you don't know, is a cloud service for photos and video. Their free account is quite awesome. One terabyte of storage (that's 62 iPhones). The photos are yours and you can adjust the privacy and sharing levels to limit how they appear in searches and who can see them. *I have my privacy set to the max - the only people that can see my photos are my family.*
+
+Getting to the point...
+
+###The iPhone Flickr App
+
+As you might have guessed, Flickr has an iPhone app - which has a preference setting to automatically send the photos from your camera roll to your Flickr account (that is, as long as you have the Flickr app running in the background). You can also select the photos from inside iPhone's camera app and send them to Flickr manually. 
+
+Both solutions work quite well. 
+
+Good luck.
