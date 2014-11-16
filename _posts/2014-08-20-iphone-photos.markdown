@@ -48,4 +48,6 @@ As you might have guessed, Flickr has an iPhone app - which has a preference set
 
 Both solutions work quite well. 
 
+My suggestion is to go with Flickr, **it's easy, free, & reliable**.
+
 Good luck.
