@@ -5,7 +5,7 @@ date:   2014-07-01 21:27:11
 categories: technology
 permalink: blog/iphone-photos
 tags:
-  - iphone
+  - iPhone
   - photos
   - technology
 ---
