@@ -26,7 +26,7 @@ At first glance, this seems pretty simple:
 
 >"Yes, but then I lose 24/7 access to them."
 
-## Ok, you can have your cake and eat it too!
+## OK, you can have your cake and eat it too!
 
 So, let's state the problem, just so we're all on the same page:
 
